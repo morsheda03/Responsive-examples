@@ -9,7 +9,7 @@ img{
     width: 100%;
 }
 .row{
-    height: 400px;
+   height: 200px;
     margin-bottom: 5px;
 }
 .row-2 , .row-3{
@@ -36,4 +36,18 @@ img{
 }
 .row-3 > div{
     flex: 1;
+}
+/* small device or mobile phone */
+@media screen and (max-width:576px) {
+    .row-2 , .row-3{
+        flex-direction: column;
+    }
+    .row-3-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-height:577px) {
+    .row{
+        height: 400px;
+    }
 }
